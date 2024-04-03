@@ -7,5 +7,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "todos")
 data class TodoLocalDto(
     @PrimaryKey
-    val id: String
+    val id: String,
+    val title: String,
+    val completed: Boolean,
+    val weekday: String
 )
